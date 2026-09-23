@@ -1,0 +1,474 @@
+.navbar{
+    background-color: #0B1020;
+    border: 1px solid #263452;
+    height: 100px;
+}
+body{
+    margin: 0;
+    overflow-x: hidden;
+   
+}
+
+.navbar-brand {
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 50px;
+    color: #f8fafc;
+}
+#dot{
+    color: #8b5cf6;
+    font-size: 70px;
+}
+.nav-item .nav-link {
+    color: #cbd5e1;
+    font-size: 20px;
+    font-family: 'Poppins';
+}
+.navbar-nav{
+   padding-left: 10px;
+}
+.nav-item .nav-link:hover{
+    color:#A78BFA;
+    transition: 0.3s;
+}
+.navbar-nav .nav-item .nav-link.active {
+    color: #8b5cf6;
+}
+
+
+.hero{
+    background-color: #0B1020;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 2.5rem;
+    padding-bottom: 3.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    
+    
+}
+.hero .left,
+.hero .right{
+    flex: 1 1 400px;
+}
+
+#heroleft{
+    color: #A78BFA;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 32px;
+    letter-spacing: 2px;
+    animation: fadeIn 1.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }}
+#name{
+    color: #f8fafc;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 52px;
+ animation: slideUp 1s ease-out forwards;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.title h2{
+    font-size: 26px;
+        animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+.title p{
+    font-size: 19px;
+        animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }}
+
+#project {
+    background-color: transparent;
+    height: 50px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: translate 0.3s, background-color 0.3s;
+    font-size: 17px;
+    --bs-btn-focus-shadow-rgb: 139, 92, 246;
+    color: #acbebc;
+    animation: fadeIn 1.5s ease-in forwards;
+}
+
+#project:hover {
+    background-color: #8b5cf6; 
+    color: #fff;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }}
+
+#contact{
+    border: 1px solid;
+    height: 50px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: translate 0.3s;
+    font-size: 17px;
+        animation: fadeIn 1.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }}
+
+#project:hover{
+    translate: 0 -2px;
+}
+#contact:hover{
+    translate: 0 -2px;
+}
+
+
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.right img{
+    width: 340px;
+    max-width: 100%;
+    border: 3px solid #8b5cf6;
+    border-radius: 24px;
+    box-shadow: 0 7px 7px 7px #A78BFA;
+   
+    animation: slideFromRight 0.7s ease-out forwards;
+}
+
+@keyframes slideFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+    
+
+
+
+@media (max-width: 991px){
+    .hero{
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1.5rem;
+    }
+    .hero .left{
+        text-align: center !important;
+    }
+    .hero .right{
+        justify-content: center !important;
+        margin-top: 2rem;
+    }
+    .title p{
+        max-width: 100% !important;
+        margin: 0 auto;
+    }
+    #project, #contact{
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px){
+    #name{
+        font-size: 38px;
+    }
+    #heroleft{
+        font-size: 24px;
+    }
+    .navbar-brand{
+        font-size: 36px;
+    }
+    #dot{
+        font-size: 50px;
+    }
+    .right img{
+        width: 240px;
+    }
+    .hero{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+#aboutti{
+    color: white;
+    font-size: 32px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    text-decoration-line: underline;
+  text-decoration-color: #8b5cf6;
+  letter-spacing: 0.5px;
+
+}
+.about .card{
+    background-color:#1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 2px 3px 5px #8b5cf6;
+    margin: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+     
+    height: 220px;
+
+ 
+  justify-content: center;
+
+}
+.about .card-title{
+    color: white;
+}
+.about .card-body{
+    color:#94a3b8
+}
+.about .card{
+    transition: 0.3s;
+}
+.about .card:hover{
+    transform: translateY(-5px);
+}
+.about .card .icon{
+ color: #8b5cf6;
+}
+#skills .card {
+    background-color: #312e81;
+    color: #C4B5FD;
+    border-radius:20px;
+  box-shadow: 0 5px 6px 5px #8b5cf6;
+  padding: 40px 10px ;
+  
+    height: 220px;
+
+ 
+  justify-content: center;
+}
+
+#edu  .card{
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    color: #a78bfa;
+      padding: 40px 10px;
+    width: 100%;
+    
+     font-family: 'Trebuchet MS', Verdana, sans-serif;
+}
+#edu .col-12.col-md-6.col-lg-4 {
+    display: flex;
+}
+#dis {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-weight: 600;
+  color: #ffe371;
+  letter-spacing: 0.3px;
+}
+#linkedin {
+    background-color: transparent;
+    height: 50px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 17px;
+    transition: translate 0.3s, background-color 0.3s;
+    --bs-btn-focus-shadow-rgb: 139, 92, 246;
+}
+
+#linkedin:hover {
+    translate: 0 -2px;
+}
+.footer {
+    background-color: #0B1020;
+    border-top: 1px solid #263452;
+    padding: 30px 0 30px;
+    height: auto;
+}
+
+.footer-brand {
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 50px;
+    color: #f8fafc;
+    text-decoration: none;
+}
+.contact-btn {
+    width: 200px;
+    max-width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#con .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 140px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    width: 100%;
+    text-align: center;
+}
+
+#dot {
+    color: #8b5cf6;
+    font-size: 70px;
+}
+
+.footer-item .footer-link {
+    color: #cbd5e1;
+    font-size: 22px;
+    font-family: 'Poppins';
+}
+
+.footer-item .footer-link:hover {
+    color: #A78BFA;
+    transition: 0.3s;
+}
+
+.footer-item .footer-link.active {
+    color: #8b5cf6;
+}
+
+.footer p {
+    font-size: 20px;
+    color: #cbd5e1;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+.footer p:last-child {
+    font-size: 15px;
+    opacity: 0.7;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.social-icon {
+    color: #8b5cf6;
+    font-size: 26px;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #8b5cf6;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #8b5cf6;
+    color: #fff;
+    translate: 0 -3px;
+}
+.social-icon {
+    color: #8b5cf6;
+    font-size: 24px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #8b5cf6;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #8b5cf6;
+    color: #fff;
+    translate: 0 -3px;
+}
+.top h1{
+    color: #A78BFA;
+   font-size: 40px;
+   font-family: 'Poppins';
+   font-weight: bolder;
+}
+.top p{
+    color: gray;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.pro .card {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.pro .card:hover {
+    transform: translateY(-8px);
+}
+
+.pro img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.pro h2 {
+    font-size: 25px;
+    color: white;
+}
+
+.pro .card-title {
+    color: white;
+}
+
+.pro .card-text {
+    color: #94a3b8;
+    font-size: 18px;
+}
+
+.pro .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
