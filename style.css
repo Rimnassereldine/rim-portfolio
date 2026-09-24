@@ -566,3 +566,20 @@ body{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
+.top h1 {
+  color: #A78BFA;
+  font-family: 'Poppins';
+  font-weight: bolder;
+  font-size: clamp(1.75rem, 5vw + 0.5rem, 2.5rem); 
+  padding-top: 20px;
+  word-break: break-word;
+}
+.top h1 { font-size: 2.5rem; }
+
+@media (max-width: 768px) {
+  .top h1 { font-size: 2rem; }
+}
+
+@media (max-width: 480px) {
+  .top h1 { font-size: 1.6rem; }
+}
